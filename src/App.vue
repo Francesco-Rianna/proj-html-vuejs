@@ -1,8 +1,12 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppHero from './components/AppHero.vue'
+import AppMain from './components/AppMain.vue'
   export default {
     components : {
-      AppHeader
+      AppHeader ,
+      AppHero , 
+      AppMain
 
     },
     data() {
@@ -32,7 +36,17 @@ import AppHeader from './components/AppHeader.vue'
 <template>
   <header>
     <AppHeader v-for="contact in contacts " :contactInfo="contact"> </AppHeader>
+    <AppHero></AppHero>
   </header>
+  <main>
+    <AppMain></AppMain>
+  </main>
+
+  
+
+ 
+    
+ 
 </template>
 
 <style lang="scss">
