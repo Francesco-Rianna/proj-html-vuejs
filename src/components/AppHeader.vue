@@ -37,6 +37,29 @@ export default {
         </div>
     </div>
 
+    <div class="ms-container py-4 d-flex justify-content-between align-items-center">
+        <div class="left">
+            <img src="../assets/img-un/university_logo.png" alt="logo">
+        </div>
+        
+        <div class="right">
+            <nav>
+                <ul class="d-flex gap-3 list-unstyled ">
+                    <a href=""><li>HOME</li> </a>
+                    <a href=""><li>ABOUT</li></a>
+                    <a href=""><li>COURSES</li></a>
+                    <a href=""><li>EVENTS</li></a>
+                    <a href=""><li>FACILITIES</li></a>
+                    <a href=""><li>NEWS</li></a>
+                    <a href=""><li>ADMISSIONS</li></a> 
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+        
+        
+
 
 </template>
 
@@ -44,7 +67,8 @@ export default {
  @use '../style/variables' as *;
 .bg-header{
     background-color: $color-orange;
-} li {
+    li {
     color : $color-white;
+}
 }
 </style>
