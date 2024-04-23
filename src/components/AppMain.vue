@@ -1,6 +1,10 @@
 <script>
+import AppAccordion from './AppAccordion.vue'
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+    components : {
+        AppAccordion
+    }
 }
 </script>
 
@@ -53,6 +57,7 @@ export default {
                     </div>
                         <div class="col-6 mt-5" >
                             <h5>OUR VALUES</h5>
+                            <AppAccordion class="mt-3"></AppAccordion>
                             
                              
                             
