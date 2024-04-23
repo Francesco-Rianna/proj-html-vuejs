@@ -41,7 +41,7 @@ import AppMain from './components/AppMain.vue'
   <main>
     //  <!-- first section of main -->
     <section>
-      <AppMain></AppMain>
+      <AppMain ></AppMain>
     </section>
      <!--///// first section of main -->
 

@@ -1,9 +1,11 @@
 <script>
 import AppAccordion from './AppAccordion.vue'
+import TabSection from './TabSection.vue'
 export default {
     name: 'AppMain',
     components : {
-        AppAccordion
+        AppAccordion,
+        TabSection
     }
 }
 </script>
@@ -33,7 +35,7 @@ export default {
             </div>
         </div>
 
-        <div class="bottom ">
+        <div class="bottom py-5">
             <div class="ms-container ">
                 <div class="row d-flex  ">
                     <div class="col-6 mt-5">
@@ -58,15 +60,16 @@ export default {
                         <div class="col-6 mt-5" >
                             <h5>OUR VALUES</h5>
                             <AppAccordion class="mt-3"></AppAccordion>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <TabSection></TabSection>
                             
                              
                             
         
-                        </div>
 
-                </div>
-            </div>
-        </div>
     
 </template>
 
