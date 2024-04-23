@@ -6,7 +6,8 @@ import AppMain from './components/AppMain.vue'
     components : {
       AppHeader ,
       AppHero , 
-      AppMain
+      AppMain , 
+      
 
     },
     data() {
@@ -38,11 +39,13 @@ import AppMain from './components/AppMain.vue'
     <AppHero></AppHero>
   </header>
   <main>
-     <!-- first section of main -->
+    //  <!-- first section of main -->
     <section>
       <AppMain></AppMain>
     </section>
      <!--///// first section of main -->
+
+
 
   </main>
 
