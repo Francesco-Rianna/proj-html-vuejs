@@ -11,12 +11,8 @@ import AppMain from './components/AppMain.vue'
     },
     data() {
     return {
-        contacts: [
+        socials: [
             {
-                'number': "1.800.654.125.452",
-                'email': "Contact Us",
-                "alumn": "Alumni",
-                "campus": "Campus" , 
                 "fb" : '<i class="fa-brands fa-facebook-f"></i> ',
                 "twitter" : '<i class="fa-brands fa-twitter"></i>',
                 "yt" :'<i class="fa-brands fa-youtube"></i>',
@@ -25,6 +21,7 @@ import AppMain from './components/AppMain.vue'
             },
             
             ],
+        
 
         
         }         
@@ -35,7 +32,9 @@ import AppMain from './components/AppMain.vue'
 
 <template>
   <header>
-    <AppHeader v-for="contact in contacts " :contactInfo="contact"> </AppHeader>
+    <AppHeader v-for="social in socials " :socialInfo=social>
+      
+    </AppHeader>
     <AppHero></AppHero>
   </header>
   <main>

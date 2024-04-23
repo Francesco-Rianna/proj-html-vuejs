@@ -2,8 +2,24 @@
 export default {
     name : 'AppHeader' ,
     props : {
-        contactInfo : Object
-    }
+        socialInfo : Object , 
+       
+    },
+    data() {
+        return {
+            links: [
+                { text: "HOME" },
+                { text: "ABOUT" },
+                { text: "COURSES" },
+                { text: "EVENTS" },
+                { text: "FACILITIES" },
+                { text: "NEWS" },
+                { text: "ADMISSIONS" }
+            ]
+        };
+
+    
+ }
 }
 </script>
 
@@ -14,20 +30,20 @@ export default {
                 <div class="left">
                    <nav>
                     <ul class="d-flex list-unstyled gap-2">
-                        <li> <i class="fa-solid fa-phone-flip"></i> {{ contactInfo.number }}</li>
-                        <li> <i class="fa-solid fa-envelope"></i> {{ contactInfo.email}}</li>
-                        <li> <i class="fa-solid fa-graduation-cap"></i> {{ contactInfo.alumn}}</li>
-                        <li> <i class="fa-solid fa-building-columns"></i> {{ contactInfo.campus}}</li>
+                        <li> <i class="fa-solid fa-phone-flip"></i> 1.800.654.125.452</li>
+                        <li> <i class="fa-solid fa-envelope"></i> Contact Us</li>
+                        <li> <i class="fa-solid fa-graduation-cap"></i> Alumni</li>
+                        <li> <i class="fa-solid fa-building-columns"></i>Campus</li>
                     </ul>
                    </nav>
                 </div>
                 <div class="right">
                     <nav>
                     <ul class="d-flex list-unstyled gap-3 ">
-                        <li v-html="contactInfo.fb"></li>
-                        <li v-html="contactInfo.twitter"></li>
-                        <li v-html="contactInfo.yt"></li>
-                        <li v-html="contactInfo.insta"></li>
+                       <a href=""> <li v-html="socialInfo.fb"></li></a>
+                       <a href=""><li v-html="socialInfo.twitter"></li></a>
+                       <a href=""><li v-html="socialInfo.yt"></li></a>
+                       <a href=""><li v-html="socialInfo.insta"></li></a>
                     </ul>
                    </nav>
                     
@@ -45,13 +61,8 @@ export default {
         <div class="right">
             <nav>
                 <ul class="d-flex gap-3 list-unstyled ">
-                    <a href=""><li>HOME</li> </a>
-                    <a href=""><li>ABOUT</li></a>
-                    <a href=""><li>COURSES</li></a>
-                    <a href=""><li>EVENTS</li></a>
-                    <a href=""><li>FACILITIES</li></a>
-                    <a href=""><li>NEWS</li></a>
-                    <a href=""><li>ADMISSIONS</li></a> 
+                    <a href="" v-for="link in links"> <li>{{ link.text }}</li> </a>
+                    
                 </ul>
             </nav>
         </div>
