@@ -39,23 +39,26 @@ export default {
             <div class="ms-container ">
                 <div class="row d-flex  ">
                     <div class="col-6 mt-5">
-                      <h5>WORLD CLASS FACILITIES</h5>
+                      <h5>  WORLD CLASS FACILITIES</h5>
                       <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae corrupti assumenda nostrum voluptates, tempora quis minus nam asperiores? Molestiae ipsum amet pariatur! Suscipit eligendi eaque iusto, fugit quos nostrum nemo!</p>
-                      <div class="mt-4">
+                      <div class="mt-4 p-2">
                           <div class="d-flex gap-2 align-items-center" >
-                            <h5>International focus -</h5>
+                            <i class="fa-solid fa-globe me-3"></i>
+                            <h5> International focus -</h5>
                             <p class="mb-2" > our students come from across the globe</p>
                           </div>
-                          <div class="d-flex gap-2 align-items-center" >
-                            <h5>Residential courses -</h5>
+                          <div class="d-flex gap-2 align-items-center " >
+                            <i class="fa-solid fa-graduation-cap me-2"></i>
+                            <h5 class="ms-1"> Residential courses -</h5>
                             <p class="mb-2">we encourage learning and growth - </p>
                           </div>
                           <div class="d-flex gap-2 align-items-center" >
+                            <i class="fa-regular fa-address-book me-3"></i>
                             <h5>People not profits - </h5>
-                            <p class="mb-2"> education is a right not a privilage</p>
+                            <p class="mb-2">  education is a right not a privilage</p>
                           </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab ut omnis quo consectetur vero repellendus</p>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ab ut omnis quo consectetur vero repellendus</p>
                     </div>
                         <div class="col-6 mt-5" >
                             <h5>OUR VALUES</h5>
@@ -119,7 +122,13 @@ p{
 }
 
 h5,h3{
-    color : $color-gray-d
+    color : $color-gray-d;
+    font-size: 18px;
+}
+
+i{
+    color : $color-orange;
+   font-size: 20px;
 }
 
 </style>
