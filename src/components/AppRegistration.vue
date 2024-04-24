@@ -61,7 +61,7 @@ export default {
 input{
     background: #444d63;
     border: none;
-    width: 22%;
+    width: 25%;
    
 }
 input::placeholder{
@@ -69,7 +69,7 @@ input::placeholder{
 }
 
 button{
-    width: 22%;
+    width: 18%;
     background: $color-orange;
     color: $color-white;
     font-weight: bold;
