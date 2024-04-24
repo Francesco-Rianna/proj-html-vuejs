@@ -4,13 +4,25 @@ export default{
     data() {
     return {
         posts: [
-            {
-                "first-posts" : '<i class="fa-brands fa-facebook-f"></i> ',
-                "second-posts" : '<i class="fa-brands fa-twitter"></i>',
-                "third-posts" :'<i class="fa-brands fa-youtube"></i>',
+            
+                {
+                    "text":'What do succesful grads think  you should study?',
+                    "date" :'March 16 2016'
+                },
+                
+                {
+                    "text":'What do succesful grads think  you should study?',
+                    "date" :'March 15 2016'
+                },
+                {
+                    "text":'What do succesful grads think  you should study?',
+                    "date" :'March 15 2016'
+                },
                 
                 
-            },
+                
+                
+            
             
             ],
          courses: [
@@ -72,6 +84,9 @@ export default{
 <template>
     <div class="ms-container-large">
         <div class="d-flex">
+            <ul>
+                <li v-for="post in posts">{{ post.text }}</li>
+            </ul>
             <ul>
                 <li v-for="cours in courses">{{ cours.arts }}</li>
                 <li v-for="cours in courses">{{ cours.business }}</li>
