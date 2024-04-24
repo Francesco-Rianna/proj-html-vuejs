@@ -39,13 +39,13 @@ export default {
                 </div>
                 <div class="right">
                     <nav>
-                    <ul class="d-flex list-unstyled gap-3 ">
-                       <a href=""> <li v-html="socialInfo.fb"></li></a>
-                       <a href=""><li v-html="socialInfo.twitter"></li></a>
-                       <a href=""><li v-html="socialInfo.yt"></li></a>
-                       <a href=""><li v-html="socialInfo.insta"></li></a>
-                    </ul>
-                   </nav>
+                       <ul class="d-flex list-unstyled gap-3 ">
+                         <a href=""> <li v-html="socialInfo.fb"></li></a>
+                         <a href=""><li v-html="socialInfo.twitter"></li></a>
+                         <a href=""><li v-html="socialInfo.yt"></li></a>
+                         <a href=""><li v-html="socialInfo.insta"></li></a>
+                        </ul>
+                    </nav>
                     
 
                 </div>

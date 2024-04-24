@@ -74,6 +74,16 @@ export default{
             {'text': 'University Library'},
             {'text': 'Campus Services'},
             {'text': 'Careers'}
+         ],
+
+         autors : [
+             {
+                'copy': 'Theme Fusion',
+                'text' : 'All Right Reserved',
+                'powered': 'Powered By WordPress',
+                'mail' : 'support@theme-fusion.com',
+                'number': '1.800.546.456'
+            },
          ]
 
 
@@ -175,14 +185,16 @@ export default{
             
         </div>
 
-        <div class="d-flex justify-content-between color-gray">
+    </div>
+    
+        <div class="d-flex justify-content-between color-gray mt-3 py-1 ms-container-large">
             <div class="left">
                 <ul class="d-flex gap-1">
-                    <li>ok</li>
-                    <li>ok</li>
-                    <li>ok</li>
-                    <li>ok</li>
-                    <li>ok</li>
+                    <li class="d-flex align-items-center" v-for="autor in autors"> <i class="fa-regular fa-copyright mt-1 me-1"></i> {{ autor.copy }} <span class="ms-2"> | </span> </li>
+                    <li v-for="autor in autors"> {{ autor.text }} <span class="ms-2"> | </span></li>
+                    <li v-for="autor in autors"> {{ autor.powered }} <span class="ms-2"> | </span></li>
+                    <li v-for="autor in autors"> {{ autor.mail }} <span class="ms-2"> | </span></li>
+                    <li v-for="autor in autors"> {{ autor.number }} <span class="ms-2"> | </span></li>
                 </ul>
             </div>
 
@@ -201,7 +213,6 @@ export default{
                     
 
 
-    </div>
 
 </template>
 
@@ -235,5 +246,11 @@ li {
 
 .color-gray-d{
     color: $color-gray-d
+}
+
+.left{
+    i{
+        font-size: 10px;
+    }
 }
 </style>
