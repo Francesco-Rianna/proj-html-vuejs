@@ -47,7 +47,7 @@ import AppFooter from './components/AppFooter.vue'
     </section>
      <!--///// first section of main -->
 
-     <AppFooter></AppFooter>
+     <AppFooter v-for="social in socials " :socialInfo=social></AppFooter>
 
 
 

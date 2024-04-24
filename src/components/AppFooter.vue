@@ -1,6 +1,10 @@
 <script>
 export default{
     name: 'AppFooter',
+    props : {
+        socialInfo : Object , 
+       
+    },
     data() {
     return {
         posts: [
@@ -170,6 +174,32 @@ export default{
             </ul>
             
         </div>
+
+        <div class="d-flex justify-content-between color-gray">
+            <div class="left">
+                <ul class="d-flex gap-1">
+                    <li>ok</li>
+                    <li>ok</li>
+                    <li>ok</li>
+                    <li>ok</li>
+                    <li>ok</li>
+                </ul>
+            </div>
+
+            <div class="right">
+                    <nav>
+                       <ul class="d-flex list-unstyled gap-3 ">
+                         <a href=""> <li v-html="socialInfo.fb"></li></a>
+                         <a href=""><li v-html="socialInfo.twitter"></li></a>
+                         <a href=""><li v-html="socialInfo.yt"></li></a>
+                         <a href=""><li v-html="socialInfo.insta"></li></a>
+                        </ul>
+                    </nav>
+             </div>
+                
+        </div>
+                    
+
 
     </div>
 
