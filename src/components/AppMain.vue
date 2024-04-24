@@ -2,12 +2,14 @@
 import AppAccordion from './AppAccordion.vue'
 import TabSection from './TabSection.vue'
 import AppCard from './AppCard.vue'
+import AppRegistration from './AppRegistration.vue'
 export default {
     name: 'AppMain',
     components : {
         AppAccordion,
         TabSection,
-        AppCard
+        AppCard ,
+        AppRegistration
     }
 }
 </script>
@@ -82,9 +84,11 @@ export default {
             <div class="mini-bar my-5"></div>
         </div>
         <!-- SECTION CARD YOU CAN FIND IT IN COMPONENTS APPCARD.VUE -->
-       <AppCard></AppCard>   
+       <AppCard class="mb-5"></AppCard>   
 
     </div>
+
+    <AppRegistration></AppRegistration>
 
 
 
