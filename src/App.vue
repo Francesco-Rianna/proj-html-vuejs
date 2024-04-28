@@ -46,21 +46,22 @@ import AppFooter from './components/AppFooter.vue'
       <AppMain ></AppMain>
     </section>
      <!--///// first section of main -->
-
-     <AppFooter v-for="social in socials " :socialInfo=social></AppFooter>
-
-
-
   </main>
 
-  
-
- 
-    
- 
+  <footer>
+    <!-- footer -->
+    <AppFooter v-for="social in socials " :socialInfo=social></AppFooter>
+  </footer>
 </template>
+
 
 <style lang="scss">
  @use './style/generic'
 
 </style>
+  
+
+ 
+    
+ 
+

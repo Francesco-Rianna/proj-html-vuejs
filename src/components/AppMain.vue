@@ -87,22 +87,10 @@ export default {
        <AppCard class="mb-5"></AppCard>   
 
     </div>
+    <!-- SECTION REGISTRATION YOU CAN FIND IT IN COMPONENTS REGISTRATION.VUE -->
 
     <AppRegistration></AppRegistration>
-
-
-
-
-
-
-
 </template>
-
-
-
-
-
-    
 
 <style scoped lang="scss">
 @use '../style/variables' as *;
@@ -144,7 +132,12 @@ p{
 
 h5,h3{
     color : $color-gray-d;
+}
+h5{
     font-size: 18px;
+}
+h3{
+    font-size: 27px;
 }
 
 i{
@@ -159,3 +152,15 @@ i{
 }
 
 </style>
+
+
+
+
+
+
+
+
+
+
+
+    

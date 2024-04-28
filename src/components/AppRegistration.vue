@@ -18,11 +18,11 @@ export default {
                 <button>APPLY NOW</button>
             </div>
         </div>
+    </div>
+</template>
         
         
 
-    </div>
-</template>
 
 <style scoped lang="scss">
 @use '../style/variables' as *;

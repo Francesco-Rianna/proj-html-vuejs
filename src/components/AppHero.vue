@@ -3,11 +3,14 @@
     <div class="content text-center">
       <h1>Inspirng tommorow leaders</h1>
       <h3 class="my-3 ">The future Belongs To Those Who See Possibilities Today</h3>
-      <button class="mx-2 bg-orange py-1 px-3"> <a href=""> FIND A COURSE</a></button>
-      <button class="py-1 px-3 bg-sky"> <a href="">APPLY NOW</a></button>
+      <div class="mt-4">
+        <button class="mx-2 bg-orange py-2 px-3"> <a href=""> FIND A COURSE</a></button>
+        <button class="py-2 px-3 bg-sky"> <a href="">APPLY NOW</a></button>
+      </div>
     </div>
   </div>
 </template>
+
 
 <style scoped lang="scss">
 @use '../style/variables' as *;
